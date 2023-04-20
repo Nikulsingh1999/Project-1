@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+}
+
+.logo img {
+    width: 40%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    color: white
+}
+
+.nav-list li {
+    padding: 20px 26px;
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+.rightNav {
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+    color: white;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../images/background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 26px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+}
+
+.firstsection {
+
+    height: 100vh;
+}
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf {
+    width: 30%;
+}
+
+.secondHalf img {
+    width: 78%;
+    border: 3px solid white;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-size: 50px;
+    padding: 0px 19px;
+    text-align: left;
+}
+
+.main {
+    text-align: center;
+}
+
+.text-small {
+    font-size: 16px;
+    padding: 0px 15px 0px 20px;
+    text-align: justify;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 10px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn:hover {
+    border: 2px solid yellow;
+}
+
+.btn a:hover {
+    color: yellow;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+    color: white;
+}
+
+.btn-dark {
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-sm:hover {
+    color: yellow;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 99%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.sectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imgFluid {
+    width: auto;
+    height: 260px;
+    border-radius: 26px;
+    margin-top: 62px;
+}
+
+.imgFluid:hover {
+    border: 1px solid yellow;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box {
+    max-width: 94%;
+    padding: 20px;
+    background-color: rgba(7, 83, 64, 0.275);
+    margin: 50px auto 30px;
+    box-shadow: rgba(1, 1, 1, 0.43) 4px 3px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form_container {
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 32px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+.headbase {
+    font-size: 30px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input,
+select,
+textarea {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.buttons main {
+    margin-top: 6%;
+}
+
+input:focus {
+    background-color: gray;
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.textarea_control {
+    grid-column: 1 / span 2;
+}
+
+.textarea_control textarea {
+    width: 97%;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 26%;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+@media only screen and (max-width: 1230px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 447px;
+    }
+
+    .rightnav {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+    }
+
+    .text-small {
+        text-align: center;
+    }
+
+    .text-big {
+        text-align: center;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .textarea_control {
+        grid-column: 1 / span 1;
+    }
+}
